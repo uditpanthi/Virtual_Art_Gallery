@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "localConnectionString": "Server=DESKTOP-JFQUU93;Database=VirtualGallery;Trusted_connection=true"
+  }
+}
