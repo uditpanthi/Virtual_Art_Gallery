@@ -20,7 +20,7 @@ CREATE TABLE Artwork (
     Medium VARCHAR(100),
     ImageURL VARCHAR(255),
     ArtistID INT,
-    FOREIGN KEY (ArtistID) REFERENCES Artist(ArtistID)
+    FOREIGN KEY (ArtistID) REFERENCES Artist(ArtistID) ON DELETE CASCADE
 );
 
 -- Create User table
@@ -44,8 +44,8 @@ CREATE TABLE FavoriteArtworks (
     UserID INT,
     ArtworkID INT,
     PRIMARY KEY (UserID, ArtworkID),
-    FOREIGN KEY (UserID) REFERENCES Users(UserID),
-    FOREIGN KEY (ArtworkID) REFERENCES Artwork(ArtworkID)
+    FOREIGN KEY (UserID) REFERENCES Users(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (ArtworkID) REFERENCES Artwork(ArtworkID)ON DELETE CASCADE
 );
 
 -- Create Gallery table
@@ -56,7 +56,7 @@ CREATE TABLE Gallery (
     Location VARCHAR(255),
     CuratorID INT,
     OpeningHours VARCHAR(255),
-    FOREIGN KEY (CuratorID) REFERENCES Artist(ArtistID)
+    FOREIGN KEY (CuratorID) REFERENCES Artist(ArtistID)ON DELETE CASCADE
 );
 
 -- Create Artwork_Gallery table (Many-to-Many relationship between Artwork and Gallery)
@@ -64,8 +64,8 @@ CREATE TABLE Artwork_Gallery (
     ArtworkID INT,
     GalleryID INT,
     PRIMARY KEY (ArtworkID, GalleryID),
-    FOREIGN KEY (ArtworkID) REFERENCES Artwork(ArtworkID),
-    FOREIGN KEY (GalleryID) REFERENCES Gallery(GalleryID)
+    FOREIGN KEY (ArtworkID) REFERENCES Artwork(ArtworkID)ON DELETE CASCADE,
+    FOREIGN KEY (GalleryID) REFERENCES Gallery(GalleryID)ON DELETE CASCADE
 );
 
 
