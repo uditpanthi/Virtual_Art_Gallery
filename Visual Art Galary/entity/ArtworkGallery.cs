@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Visual_Art_Galary.entity
+﻿namespace Visual_Art_Galary.entity
 {
     public class ArtworkGallery
     {

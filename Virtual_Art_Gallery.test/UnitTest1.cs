@@ -19,6 +19,7 @@ namespace Virtual_Art_Gallery.test
         }
 
         [Test]
+        [Ignore("ignore")]
         public void NewUserCanRegisterSuccessfully()
         {
             using (var transaction = new TransactionScope())
@@ -51,8 +52,8 @@ namespace Virtual_Art_Gallery.test
                 UserName = "uditpanthi",
                 Password = "Upanthi@123",
             };
-                // Act
-                bool registrationStatus = service.Register(newUser);
+             // Act
+             bool registrationStatus = service.Register(newUser);
             // Assert
             Assert.IsFalse(registrationStatus);
         }

@@ -1,5 +1,4 @@
-﻿using System;
-using Visual_Art_Galary.entity;
+﻿using Visual_Art_Galary.entity;
 
 namespace Visual_Art_Galary.dao
 {

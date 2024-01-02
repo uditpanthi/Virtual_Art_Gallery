@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace Visual_Art_Galary.entity
 {
     public class FavoriteArtwork

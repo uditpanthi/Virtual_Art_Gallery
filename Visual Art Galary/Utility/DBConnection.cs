@@ -1,9 +1,4 @@
 ﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Visual_Art_Galary.Utility
 {
@@ -27,15 +22,4 @@ namespace Visual_Art_Galary.Utility
         }
 
     }
-
-    /*public static class DBConnection
-    {
-        public static string GetConnectionString()
-        {
-            // Read connection string from property file or configuration
-            string connectionString = "Server=DESKTOP-JFQUU93;Database=VirtualGallery;Trusted_connection=true";
-
-            return connectionString;
-        }
-    }*/
 }

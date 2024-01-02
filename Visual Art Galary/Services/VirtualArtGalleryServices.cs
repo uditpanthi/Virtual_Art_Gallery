@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 using Visual_Art_Galary.entity;
 using Visual_Art_Galary.Services;
 using Visual_Art_Galary.Utility;
@@ -96,6 +92,7 @@ namespace Visual_Art_Galary.dao
                 return false;
             }
         }
+
         public List<Artwork> BrowseArtwork()
         {
             try
@@ -143,11 +140,6 @@ namespace Visual_Art_Galary.dao
                 return null;
             }
         }
-        /*public List<Artwork> SearchArtwork(string keyword)
-        {
-            throw new NotImplementedException();
-        }*/
-
 
         public List<Gallery> ViewGalleries()
         {
@@ -251,49 +243,6 @@ namespace Visual_Art_Galary.dao
                 return false;
             }
         }
-
-
-
-
-
-
-
-        /*public Users newUserDetails(int userId)
-        {
-            Console.Write("Username: ");
-            string username = Console.ReadLine();
-
-            Console.Write("Password: ");
-            string password = Console.ReadLine();
-
-            Console.Write("Email: ");
-            string email = Console.ReadLine();
-
-            Console.Write("First Name: ");
-            string firstName = Console.ReadLine();
-
-            Console.Write("Last Name: ");
-            string lastName = Console.ReadLine();
-
-            Console.Write("Date of Birth (yyyy-MM-dd): ");
-            DateTime dateOfBirth;
-            while (!DateTime.TryParse(Console.ReadLine(), out dateOfBirth))
-            {
-                Console.WriteLine("Invalid date format. Please enter again (yyyy-MM-dd): ");
-            }
-
-            // Create a Users object with the input details
-            Users newUser = new Users
-            {
-                UserName = username,
-                Password = password,
-                Email = email,
-                FirstName = firstName,
-                LastName = lastName,
-                DateOfBirth = dateOfBirth
-            };
-            return newUser;
-        }*/
 
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Visual_Art_Galary.dao;
+﻿using Visual_Art_Galary.dao;
 using Visual_Art_Galary.entity;
 using Visual_Art_Galary.Exceptions;
 using Visual_Art_Galary.Services;
